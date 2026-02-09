@@ -38,11 +38,7 @@ export const GITHUB_CONFIG = {
 
 只需要注意设置一个仓库 write 权限，其它不用。
 
-![](/blogs/readme/2be290016e56cd34.png)
-
 点击创建，谁能安装这个仓库这个选择无所谓。直接创建。
-
-![](/blogs/readme/aa002e6805ab2d65.png)
 
 
 ### 创建密钥
@@ -50,8 +46,6 @@ export const GITHUB_CONFIG = {
 创建好 Github App 后会提示必须创建一个 **Private Key**，直接创建，会自动下载（不见了也不要紧，后面自己再创建再下载就行）。页面上有个 **App ID** 需要复制一下
 
 再切换到安装页面
-
-![](/blogs/readme/c122b1585bb7a46a.png)
 
 这里一定要只**授权当前项目**。
 
@@ -61,12 +55,9 @@ export const GITHUB_CONFIG = {
 
 直接输入这几个环境变量值就行，一般只用设置 OWNER 和 APP_ID。其它配置不用管，直接输入创建就行。
 
-![](/blogs/readme/c5a049d737848abf.png)
-
 设置完成后，需要手动再部署一次，让环境变量生效。
 * 可以直接 push 一次仓库代码会触发部署
 * 也可以手动选择创建一次部署
-![](/blogs/readme/59a802ed8d1c3a13.png)
 
 ## 4. 完成
 
