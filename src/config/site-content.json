@@ -35,23 +35,11 @@
 	"currentArtImageId": "a46372ff45bc5524",
 	"backgroundImages": [
 		{
-<<<<<<< HEAD
 			"id": "bg-dog",
 			"url": "/images/bg-dog.webp"
 		}
 	],
 	"currentBackgroundImageId": "bg-dog",
-=======
-			"id": "",
-			"url": ""
-		},
-		{
-			"id": "5e8031dcdb732316",
-			"url": "/images/background/5e8031dcdb732316.png"
-		}
-	],
-	"currentBackgroundImageId": "5e8031dcdb732316",
->>>>>>> c34373173c0785c20b05e18f24fb5cf040f39714
 	"socialButtons": [
 		{
 			"id": "github",
