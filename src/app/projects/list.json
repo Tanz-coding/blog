@@ -2,7 +2,7 @@
 	{
 		"name": "Q信",
 		"year": 2026,
-		"image": "blob:https://tyt8.dpdns.org/39a79862-40e0-4764-b4cd-b0e8dc7c47e3",
+		"image": "/images/project/6e1eb4cc8d360f3a.webp",
 		"url": "https://github.com/Tanz-coding/mychat",
 		"description": "一个集成聊天 + 新闻中心 + AI 助手 + Electron 桌面版的即时通讯系统",
 		"tags": [
