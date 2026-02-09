@@ -3,8 +3,8 @@
 		"width": 360,
 		"height": 200,
 		"order": 3,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": -184,
+		"offsetY": -350,
 		"enabled": true
 	},
 	"hiCard": {
@@ -16,20 +16,20 @@
 		"enabled": true
 	},
 	"clockCard": {
-		"width": 232,
-		"height": 132,
+		"width": 367,
+		"height": 174,
 		"offset": 92,
 		"order": 4,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": 216,
+		"offsetY": -313,
 		"enabled": true
 	},
 	"calendarCard": {
 		"width": 350,
 		"height": 286,
 		"order": 5,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": 243,
+		"offsetY": -114,
 		"enabled": true
 	},
 	"musicCard": {
@@ -61,31 +61,31 @@
 		"width": 266,
 		"height": 160,
 		"order": 8,
-		"offsetX": -480,
-		"offsetY": 92,
+		"offsetX": -496,
+		"offsetY": 227,
 		"enabled": true
 	},
 	"writeButtons": {
 		"height": 42,
 		"width": 180,
 		"order": 8,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": 393,
+		"offsetY": 270,
 		"enabled": true
 	},
 	"navCard": {
 		"width": 280,
 		"height": 434,
 		"order": 2,
-		"offsetX": -491,
-		"offsetY": -367,
+		"offsetX": -505,
+		"offsetY": -280,
 		"enabled": true
 	},
 	"likePosition": {
 		"width": 54,
 		"height": 54,
 		"order": 8,
-		"offsetX": 354,
+		"offsetX": 599,
 		"offsetY": 264,
 		"enabled": true
 	},
