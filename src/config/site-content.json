@@ -51,9 +51,16 @@
 		{
 			"id": "email",
 			"type": "email",
-			"value": "3156212493@qq.com",
+			"value": "jingmingguys@gmail.com",
 			"label": "",
 			"order": 1
+		},
+		{
+			"id": "button-1770612681436",
+			"type": "x",
+			"value": "noe",
+			"label": "Telegram（不能说哦）",
+			"order": 3
 		}
 	],
 	"clockShowSeconds": false,
