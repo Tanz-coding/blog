@@ -67,9 +67,17 @@
 	},
 	"writeButtons": {
 		"height": 42,
-		"width": 180,
+		"width": 130,
 		"order": 8,
 		"offsetX": 393,
+		"offsetY": 270,
+		"enabled": true
+	},
+	"configButton": {
+		"height": 42,
+		"width": 40,
+		"order": 8,
+		"offsetX": 539,
 		"offsetY": 270,
 		"enabled": true
 	},

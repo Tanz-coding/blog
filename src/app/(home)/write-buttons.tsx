@@ -6,12 +6,11 @@ import { useConfigStore } from './stores/config-store'
 import { useCenterStore } from '@/hooks/use-center'
 import { useRouter } from 'next/navigation'
 import { useSize } from '@/hooks/use-size'
-import DotsSVG from '@/svgs/dots.svg'
 import { HomeDraggableLayer } from './home-draggable-layer'
 
 export default function WriteButton() {
 	const center = useCenterStore()
-	const { cardStyles, setConfigDialogOpen, siteContent } = useConfigStore()
+	const { cardStyles, siteContent } = useConfigStore()
 	const { maxSM } = useSize()
 	const router = useRouter()
 	const styles = cardStyles.writeButtons
@@ -55,15 +54,6 @@ export default function WriteButton() {
 
 					<PenSVG />
 					<span>写文章</span>
-				</motion.button>
-				<motion.button
-					initial={{ opacity: 0, scale: 0.6 }}
-					animate={{ opacity: 1, scale: 1 }}
-					whileHover={{ scale: 1.05 }}
-					whileTap={{ scale: 0.95 }}
-					onClick={() => setConfigDialogOpen(true)}
-					className='p-2'>
-					<DotsSVG className='h-6 w-6' />
 				</motion.button>
 			</motion.div>
 		</HomeDraggableLayer>
