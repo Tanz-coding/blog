@@ -95,6 +95,32 @@ async function createPullRequest(token: string, head: string, title: string, bod
 	return await res.json()
 }
 
+export async function getGuestbookMessages(): Promise<GuestbookMessage[]> {
+	try {
+		// Try to fetch from GitHub API first for freshest data
+		const fileData = await fetchFileSHA()
+		if (fileData) {
+			const decodedContent = Buffer.from(fileData.content, 'base64').toString('utf-8')
+			return JSON.parse(decodedContent)
+		}
+	} catch (e) {
+		console.warn('Failed to fetch from GitHub API, falling back to public raw URL', e)
+	}
+
+	// Fallback to raw content (public, cached)
+	try {
+        const rawUrl = `https://raw.githubusercontent.com/${GITHUB_CONFIG.OWNER}/${GITHUB_CONFIG.REPO}/${GITHUB_CONFIG.BRANCH}/${MESSAGE_PATH}`
+		const res = await fetch(rawUrl, { next: { revalidate: 60 } })
+		if (res.ok) {
+			return await res.json()
+		}
+	} catch (e) {
+		console.error('Failed to fetch raw messages', e)
+	}
+
+	return []
+}
+
 export async function submitGuestbookMessage(formData: FormData) {
 	const name = formData.get('name') as string
 	const content = formData.get('content') as string

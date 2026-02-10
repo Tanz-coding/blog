@@ -7,6 +7,8 @@ import { HomeDraggableLayer } from './home-draggable-layer'
 import { CARD_SPACING } from '@/consts'
 import Link from 'next/link'
 import { ExternalLink } from 'lucide-react'
+import { getGuestbookMessages } from '@/app/guestbook/actions'
+import { useEffect, useState } from 'react'
 
 interface GuestbookMessage {
 	id: string
@@ -15,26 +17,20 @@ interface GuestbookMessage {
 	date: string
 }
 
-const MOCK_MESSAGES: GuestbookMessage[] = [
-	{
-		id: '1',
-		name: 'Example User',
-		content: 'Awesome blog design!',
-		date: '2025-02-10'
-	},
-	{
-		id: '2',
-		name: 'Visitor',
-		content: 'Looking forward to more articles.',
-		date: '2025-02-09'
-	}
-]
-
 export default function GuestbookCard() {
 	const center = useCenterStore()
 	const { cardStyles } = useConfigStore()
 	const styles = (cardStyles as any).guestbookCard // Temporary cast untill types are updated
 	const hiCardStyles = cardStyles.hiCard
+	const [messages, setMessages] = useState<GuestbookMessage[]>([])
+
+	useEffect(() => {
+		getGuestbookMessages().then(msgs => {
+			if (msgs && msgs.length > 0) {
+				setMessages(msgs.slice(0, 2))
+			}
+		})
+	}, [])
 
 	// Fallback if styles haven't loaded yet or config is missing
 	if (!styles) return null
@@ -69,7 +65,8 @@ export default function GuestbookCard() {
 
 				{/* List Area */}
 				<div className='scrollbar-none mask-image-fade-bottom max-sm:max-h-[200px] flex-1 space-y-3 overflow-y-auto pr-1'>
-					{MOCK_MESSAGES.map(msg => (
+					{messages.length === 0 && <div className='py-4 text-center text-xs text-gray-500'>加载中...</div>}
+					{messages.map(msg => (
 						<div key={msg.id} className='bg-white/40 rounded-xl border border-white/30 p-3 shadow-sm'>
 							<div className='flex items-center justify-between mb-1'>
 								<span className='text-primary/90 text-sm font-medium'>{msg.name}</span>

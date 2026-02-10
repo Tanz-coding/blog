@@ -51,7 +51,7 @@ export default function GuestbookClient({ initialMessages }: { initialMessages: 
 					<MessageCircle className='h-8 w-8 md:h-10 md:w-10' />
 					留言板
 				</h1>
-				<p className='text-secondary text-base text-center md:text-lg'>欢迎留言，或只是打个招呼！</p>
+				<p className='text-secondary text-base text-center md:text-lg'>欢迎留言，只是打个招呼也可以，Tenz在这里等着你回来！</p>
 			</motion.div>
 
 			<div className='flex flex-col-reverse gap-8 md:grid md:grid-cols-[1fr_350px]'>
