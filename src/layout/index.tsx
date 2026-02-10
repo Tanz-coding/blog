@@ -46,7 +46,8 @@ export default function Layout({ children }: PropsWithChildren) {
 						backgroundImage: `url(${currentBackgroundImage.url})`,
 						backgroundSize: 'cover',
 						backgroundPosition: 'center',
-						backgroundRepeat: 'no-repeat'
+						backgroundRepeat: 'no-repeat',
+						opacity: 0.25
 					}}
 				/>
 			)}
