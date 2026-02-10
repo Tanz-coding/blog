@@ -34,7 +34,7 @@ export default function GuestbookClient({ initialMessages }: { initialMessages: 
 		const result = await submitGuestbookMessage(formData)
 
 		if (result.success) {
-			toast.success('留言已发送！')
+			toast.success(result.message)
 			setName('')
 			setContent('')
 		} else {
