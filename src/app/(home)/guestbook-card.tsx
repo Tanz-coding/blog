@@ -78,15 +78,13 @@ export default function GuestbookCard() {
 				</div>
 
 				{/* Form Area */}
-				<div className='border-white/20 mt-3 flex gap-2 border-t pt-3'>
-					<input
-						type='text'
-						placeholder='Say something...'
-						className='text-primary placeholder:text-secondary/70 focus:bg-white/80 focus:border-brand/50 flex-1 rounded-lg border border-white/40 bg-white/50 px-3 py-2 text-xs transition-colors focus:outline-none'
-					/>
-					<button className='bg-brand hover:bg-brand/90 active:scale-95 rounded-lg px-4 py-2 text-xs font-bold text-white shadow-sm transition-all'>
-						Send
-					</button>
+				<div className='border-white/20 mt-3 border-t pt-3'>
+					<Link
+						href='/guestbook'
+						className='bg-brand/10 hover:bg-brand/20 text-brand active:scale-95 flex w-full items-center justify-center rounded-lg px-4 py-2 text-xs font-bold transition-all'
+					>
+						跟Tenz聊聊你的想法
+					</Link>
 				</div>
 			</Card>
 		</HomeDraggableLayer>
