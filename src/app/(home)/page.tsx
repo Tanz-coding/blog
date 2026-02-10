@@ -11,6 +11,7 @@ import WriteButtons from '@/app/(home)/write-buttons'
 import ConfigButton from '@/app/(home)/config-button'
 import LikePosition from './like-position'
 import HatCard from './hat-card'
+import GuestbookCard from './guestbook-card'
 import BeianCard from './beian-card'
 import { useSize } from '@/hooks/use-size'
 import { motion } from 'motion/react'
@@ -89,6 +90,7 @@ export default function Home() {
 				{!maxSM && (cardStyles as any).configButton?.enabled !== false && <ConfigButton />}
 				{cardStyles.likePosition?.enabled !== false && <LikePosition />}
 				{cardStyles.hatCard?.enabled !== false && <HatCard />}
+				{(cardStyles as any).guestbookCard?.enabled !== false && <GuestbookCard />}
 				{cardStyles.beianCard?.enabled !== false && <BeianCard />}
 			</div>
 

@@ -3,16 +3,16 @@
 		"width": 352,
 		"height": 189,
 		"order": 3,
-		"offsetX": -181,
-		"offsetY": -341,
+		"offsetX": -148,
+		"offsetY": -297,
 		"enabled": true
 	},
 	"hiCard": {
 		"width": 360,
 		"height": 288,
 		"order": 1,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": -149,
+		"offsetY": -98,
 		"enabled": true
 	},
 	"clockCard": {
@@ -20,16 +20,16 @@
 		"height": 174,
 		"offset": 92,
 		"order": 4,
-		"offsetX": 215,
-		"offsetY": 102,
+		"offsetX": 251,
+		"offsetY": 90,
 		"enabled": true
 	},
 	"calendarCard": {
 		"width": 350,
 		"height": 286,
 		"order": 5,
-		"offsetX": 212,
-		"offsetY": -214,
+		"offsetX": 249,
+		"offsetY": -204,
 		"enabled": true
 	},
 	"musicCard": {
@@ -37,40 +37,40 @@
 		"height": 66,
 		"offset": 120,
 		"order": 6,
-		"offsetX": 342,
-		"offsetY": -311,
+		"offsetX": 372,
+		"offsetY": -298,
 		"enabled": true
 	},
 	"socialButtons": {
 		"width": 339,
 		"height": 50,
 		"order": 6,
-		"offsetX": -158,
-		"offsetY": 156,
+		"offsetX": -127,
+		"offsetY": 206,
 		"enabled": true
 	},
 	"shareCard": {
-		"width": 361,
-		"height": 178,
+		"width": 279,
+		"height": 195,
 		"order": 7,
-		"offsetX": -180,
-		"offsetY": 212,
+		"offsetX": -442,
+		"offsetY": -307,
 		"enabled": true
 	},
 	"articleCard": {
 		"width": 268,
 		"height": 165,
 		"order": 8,
-		"offsetX": -497,
-		"offsetY": 183,
+		"offsetX": -737,
+		"offsetY": 141,
 		"enabled": true
 	},
 	"writeButtons": {
 		"height": 50,
 		"width": 125,
 		"order": 8,
-		"offsetX": 202,
-		"offsetY": -300,
+		"offsetX": 235,
+		"offsetY": -296,
 		"enabled": true
 	},
 	"configButton": {
@@ -85,16 +85,16 @@
 		"width": 280,
 		"height": 434,
 		"order": 2,
-		"offsetX": -505,
-		"offsetY": -280,
+		"offsetX": -740,
+		"offsetY": -320,
 		"enabled": true
 	},
 	"likePosition": {
-		"width": 54,
-		"height": 54,
+		"width": 66,
+		"height": 50,
 		"order": 8,
-		"offsetX": 591,
-		"offsetY": 258,
+		"offsetX": 642,
+		"offsetY": 287,
 		"enabled": true
 	},
 	"hatCard": {
@@ -112,5 +112,13 @@
 		"offsetX": null,
 		"offsetY": null,
 		"enabled": false
+	},
+	"guestbookCard": {
+		"width": 267,
+		"height": 357,
+		"order": 10,
+		"offsetX": -435,
+		"offsetY": -93,
+		"enabled": true
 	}
 }
